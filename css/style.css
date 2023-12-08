@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    font-family: 'PXfont2', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-decoration: none;
+    word-spacing: 0.4em;
+    
+}
+
+@font-face {
+    font-family: 'SVfont1';
+    src: url('../fonts/thin_pixel-7.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SVfont2';
+    src: url('../fonts/Stardew\ Valley\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PXfont1';
+    src: url('../fonts/Pixel\ Sans\ Serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PXfont2';
+    src: url('../fonts/Pixel\ Sans\ Serif\ Condensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Default';
+    src: url('../fonts/Mooli-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Default2';
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Default3';
+    src: url('../fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+
+html{
+    /*62.5% seria igual a 10px*/
+    font-size: 62.5%;
+}
+
+.bg-custom-blue {
+    background-color: #0579E6; /* Cor de fundo desejada */
+    border-radius: 0; /* Opcional: remova bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Em um arquivo CSS separado ou em um bloco de estilo no seu HTML */
+.bg-custom-primary {
+    background-color: white; /* Define a cor de fundo como branca */
+    color: black; /* Define a cor do texto para contraste */
+}
+
+/* Em um arquivo CSS separado ou em um bloco de estilo no seu HTML */
+
+.bg-custom-blue {
+    background-color: #0579E6; /* Cor verde */
+    border-radius: 20px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+.navbar-nav .nav-link {
+    font-size: 160%; /* Altere o tamanho da fonte para o valor desejado */
+  }
+
+.navbar-brand{
+    font-family: 'PXfont2', sans-serif;
+    color:white;
+}
+.navbar {
+    background: transparent; 
+    backdrop-filter: blur(2px);
+}
+.navbar .navbar-toggler {
+    color: white; /* Ícone do botão de alternância (hambúrguer) branco */
+}
+
+.section1 {
+    background: url('../img/wallpapersden.com_stardew-valley_1920x1080.jpg');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* Permite que elementos internos respeitem a sobreposição */    
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.anime-card {
+    width: calc(30% - 90px);
+    margin-bottom: 20px;
+    background-color: #F6D975;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.1rem;
+    }
+
+.anime-card:hover {
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+    .anime-list {
+        flex-direction: column;
+    }
+
+    .anime-card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
